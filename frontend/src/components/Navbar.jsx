@@ -1,21 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">Accupro Solutions</div>
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>Find Job</li>
-          <li>Find Talent</li>
-          <li>New & Insights</li>
-          <li>Contact</li>
+        {/* Logo */}
+        <div className="logo">AccuPro Solutions</div>
+
+        {/* Links */}
+        <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+          <li>
+            <NavLink
+              to="/"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/jobs"
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Jobs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Contact
+            </NavLink>
+          </li>
+
+          {/* Mobile Actions */}
+          <div className="nav-actions-mobile">
+            <button className="btn-outline">Join Now</button>
+            <button className="btn-primary">Hire Now</button>
+          </div>
         </ul>
+
+        {/* Desktop Buttons */}
         <div className="nav-actions">
           <button className="btn-outline">Join Now</button>
           <button className="btn-primary">Hire Now</button>
+        </div>
+
+        {/* Hamburger */}
+        <div
+          className={`hamburger ${isOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </div>
       </div>
     </nav>

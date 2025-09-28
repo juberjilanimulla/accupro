@@ -1,24 +1,25 @@
 import React from "react";
-import Hero from "./components/Hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Jobs from "./components/Jobs";
-import HowItWorks from "./components/HowItWorks";
-import Testimonial from "./components/Testimonial";
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import JobsPage from "./pages/JobsPage";
+import ContactPage from "./pages/ContactPage";
+import NotFound from "./pages/NotFound";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Hero />
+    <Router>
       <Navbar />
-      <About />
-      <Jobs />
-      <HowItWorks />
-      <Testimonial />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
