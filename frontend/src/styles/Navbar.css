@@ -133,7 +133,7 @@
 }
 
 .nav-actions-mobile {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   margin-top: 15px;
@@ -141,6 +141,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+     .nav-links.open .nav-actions-mobile {
+       display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px
+  }
   .nav-links {
     display: none;
   }
