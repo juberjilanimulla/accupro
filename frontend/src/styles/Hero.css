@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .hero {
   width: 100%;
   background: #fff;
   padding: 60px 20px;
+  font-family:"Montserrat";
 }
 
 .hero-wrapper{
@@ -72,7 +75,7 @@
 }
 
 .hero-title .highlight {
-  color: #0066ff;
+  color: #014AB9;
 }
 
 .hero-subtitle {
@@ -92,6 +95,7 @@
   padding: 10px;
   overflow: hidden;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-family: "Poppins";
 }
 
 .search-btn{
@@ -99,20 +103,24 @@
   align-items: center;
   gap: 8px;
   padding: 15px 20px;
-  background: #0066ff;
+  background: #014AB9;
   color: #fff;
   font-weight: 600;
   border-radius: 40px ;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Poppins";
 }
 
 .search-btn:hover {
-  background: #004bb5;
+  background: #014AB9;
 }
 .search-icon {
-  font-size: 24px;       /* control icon size */
+  font-size: 15px;  
+  border: 1px solid #fff; 
+  padding: 0.3rem;    
+  border-radius: 50%;
 }
 .search-bar input{
   flex: 1;
@@ -121,11 +129,12 @@
   font-size: 14px;
   outline: none;
   background: transparent;
+  font-family: "Poppins";
 }
 .select-wrapper{
   position: relative;
   border-left: 1px solid #ddd;
-
+  /* font-family: "Poppins"; */
 }
 
 .select-wrapper select{
@@ -138,6 +147,7 @@
     appearance: none;
     cursor: pointer;
     color: #222;
+    font-family: "Poppins";
 }
 
 .select-wrapper::after{
@@ -174,12 +184,15 @@
 }
 
 .people-join{
-    color: #004bb5;
     gap: 10px;
     margin: 0;
     font-size: 20px;
-}
 
+}
+.people-join strong{
+    color: #014AB9;
+    font-weight: 600;
+}
 .stars {
   display: block;
 
@@ -201,7 +214,6 @@
   position: relative;
   border-radius: 30px;
   padding: 20px;
-  position: relative;
   z-index: 1;
   
 }
@@ -234,7 +246,7 @@
   position: absolute;
   left: 0;
   bottom: 40px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-footer{

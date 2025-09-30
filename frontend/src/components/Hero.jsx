@@ -47,11 +47,6 @@ const Hero = () => {
           <div className="hero-image-wrapper">
             <div className="hero-image-bg">
               <img
-                src="/assets/hero/hero-thread.png"
-                alt="thread"
-                className="hero-image-thread"
-              />
-              <img
                 src="/assets/hero/hero-main.png"
                 alt="job seekers"
                 className="hero-image-right"
@@ -61,13 +56,18 @@ const Hero = () => {
                 alt="job seekers"
                 className="hero-image-right-2"
               />
+              <img
+                src="/assets/hero/hero-thread.png"
+                alt="thread"
+                className="hero-image-thread"
+              />
             </div>
           </div>
         </div>
         <div className="hero-footer">
           <div className="hero-footer-left">
             <p className="people-join">
-              100k+ <span>People Join</span>
+              <strong>+100k</strong> <span>People Join</span>
             </p>
             <div className="social-proof">
               <div className="avatars">

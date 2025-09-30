@@ -1,12 +1,13 @@
 /* Base Navbar */
 .navbar {
   width: 100%;
-  background: #fff;
+  background-color: var(--primary-color);
   border-bottom: 1px solid #eee;
   padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: "Poppins";
 }
 
 .navbar .container {
@@ -16,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem;
+  
 }
 
 .logo img {
@@ -70,6 +72,8 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Poppins";
+  
 }
 
 .btn-outline:hover {
@@ -85,6 +89,8 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Poppins";
+
 }
 
 .btn-primary:hover {
