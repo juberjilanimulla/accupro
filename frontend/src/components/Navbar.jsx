@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
+import logo from "/assets/navbar/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,11 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         {/* Logo */}
-        <div className="logo">AccuPro Solutions</div>
+        <div className="logo">
+          <a href="/">
+            <img src={logo} alt="AccuPro Solutions Logo" />
+          </a>
+        </div>
 
         {/* Links */}
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>

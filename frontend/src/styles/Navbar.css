@@ -10,32 +10,37 @@
 }
 
 .navbar .container {
-  max-width: 1200px;
+  /* max-width: 1800px; */
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 4rem;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #0066ff;
+.logo img {
+  height: 40px;      /* adjust based on your logo */
+  object-fit: contain;
+  display: block;
+  margin: 0px;
+ 
 }
 
 /* Desktop Nav */
 .nav-links {
-  list-style: none;
+   list-style: none;
   display: flex;
-  gap: 25px;
+  justify-content: space-around; /* equal space around each item */
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
-  font-size: 15px;
+  color: #526270;
+  font-size: 20px;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -45,9 +50,9 @@
 
 /* Active Link */
 .active-link {
-  color: #0066ff;
+  color: #0066ff !important;
   font-weight: 600;
-  border-bottom: 2px solid #0066ff;
+ 
   padding-bottom: 3px;
 }
 
