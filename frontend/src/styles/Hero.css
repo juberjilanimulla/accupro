@@ -193,6 +193,10 @@
     color: #014AB9;
     font-weight: 600;
 }
+.people-join span{
+    font-weight: 600;
+    font-size: 20px;
+}
 .stars {
   display: block;
 
@@ -280,7 +284,7 @@
 }
 
 .hero-footer-para h2{
-  max-width: 200px;
+  max-width: 250px;
   font-weight: 500;
 
 }

@@ -67,7 +67,8 @@ const Hero = () => {
         <div className="hero-footer">
           <div className="hero-footer-left">
             <p className="people-join">
-              <strong>+100k</strong> <span>People Join</span>
+              <strong>+100k</strong>{" "}
+              <span className="people-join-span">People Join</span>
             </p>
             <div className="social-proof">
               <div className="avatars">
