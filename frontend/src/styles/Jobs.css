@@ -1,28 +1,30 @@
 .jobs {
-  background: #f9f9f9;
-  padding: 80px 20px;
+  background: #fff;
+  padding: 60px 20px;
 }
 
 .jobs-container {
   max-width: 1200px;
-  margin: auto;
+  margin:0 auto;
   font-family: "Montserrat";
 }
 
-.jobs-container span{
+.jobs-container li{
   color: #004bb5;
+
+  /* padding: 0; */
 }
 
 .jobs-title {
   text-align: center;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 30px;
   color: #222;
 }
 
 .job-categories {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;

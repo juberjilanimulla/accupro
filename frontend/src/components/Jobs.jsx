@@ -56,20 +56,21 @@ const Jobs = () => {
   return (
     <section className="jobs">
       <div className="jobs-container">
+        {/* title */}
         <h2 className="jobs-title">
-          <span>Latest</span> Job Opportunities
+          <span className="highlight">Latest</span> Job Opportunities
         </h2>
 
         {/* Category Tabs */}
         <div className="job-categories">
-          <span className="active">IT & Technology</span>
-          <span>Marketing</span>
-          <span>Finance</span>
-          <span>Healthcare</span>
-          <span>Education</span>
-          <span>Creative & Media</span>
-          <span>Retail</span>
-          <span>Human Resources</span>
+          <li className="tab-active">IT & Technology</li>
+          <li>Marketing</li>
+          <li>Finance</li>
+          <li>Healthcare</li>
+          <li>Education</li>
+          <li>Creative & Media</li>
+          <li>Retail</li>
+          <li>Human Resources</li>
         </div>
 
         {/* Job Cards */}
