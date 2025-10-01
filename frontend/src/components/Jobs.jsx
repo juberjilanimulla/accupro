@@ -8,7 +8,7 @@ const jobData = [
     location: "Remote",
     posted: "2 days ago",
     applicants: "4 applicants",
-    salary: "₹25k - ₹80k",
+    salary: "₹250k - ₹800k",
   },
   {
     title: "Cybersecurity",
@@ -16,7 +16,7 @@ const jobData = [
     location: "On-site",
     posted: "3 days ago",
     applicants: "12 applicants",
-    salary: "₹25k - ₹95k",
+    salary: "₹250k - ₹950k",
   },
   {
     title: "AI Consultant",
@@ -24,7 +24,7 @@ const jobData = [
     location: "Remote",
     posted: "4 days ago",
     applicants: "5 applicants",
-    salary: "₹15k - ₹60k",
+    salary: "₹150k - ₹600k",
   },
   {
     title: "Full Stack Developer",
@@ -32,7 +32,7 @@ const jobData = [
     location: "Hybrid",
     posted: "5 days ago",
     applicants: "20 applicants",
-    salary: "₹25k - ₹85k",
+    salary: "₹250k - ₹850k",
   },
   {
     title: "Cloud Engineer",
@@ -40,7 +40,7 @@ const jobData = [
     location: "Remote",
     posted: "1 week ago",
     applicants: "6 applicants",
-    salary: "₹22k - ₹75k",
+    salary: "₹220k - ₹750k",
   },
   {
     title: "Machine Learning Engineer",
@@ -48,7 +48,7 @@ const jobData = [
     location: "On-site",
     posted: "1 week ago",
     applicants: "10 applicants",
-    salary: "₹30k - ₹90k",
+    salary: "₹300k - ₹900k",
   },
 ];
 
@@ -56,7 +56,9 @@ const Jobs = () => {
   return (
     <section className="jobs">
       <div className="jobs-container">
-        <h2 className="jobs-title">Latest Job Opportunities</h2>
+        <h2 className="jobs-title">
+          <span>Latest</span> Job Opportunities
+        </h2>
 
         {/* Category Tabs */}
         <div className="job-categories">

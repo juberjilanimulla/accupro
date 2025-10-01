@@ -6,6 +6,11 @@
 .jobs-container {
   max-width: 1200px;
   margin: auto;
+  font-family: "Montserrat";
+}
+
+.jobs-container span{
+  color: #004bb5;
 }
 
 .jobs-title {

@@ -1,7 +1,7 @@
-/* .about-wrapper {
+ .about-wrapper {
   background: #fff;
   padding: 2rem;
-} */
+} 
 
 .about-container {
   max-width: 1200px;
@@ -10,8 +10,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 200px;
-
 }
 
 /* left tagline */
@@ -27,7 +25,7 @@
 .about-left-title {
   font-weight:350;
   font-family: "Poppins"; 
-  max-width: 300px;
+  /* max-width: 100px; */
   padding: 10px 0px;
   font-size: 48px;
   margin: 0;
@@ -112,3 +110,29 @@
    font-size: 16px;
 }
 
+
+.about-button{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+  padding: 15px 20px;
+  background: #014AB9;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 40px ;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Poppins";
+}
+
+.about-button:hover {
+  background: #3888ff;
+}
+.about-button-icon {
+  font-size: 15px;  
+  border: 1px solid #fff; 
+  padding: 0.3rem;    
+  border-radius: 50%;
+}
